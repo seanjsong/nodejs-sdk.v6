@@ -5,9 +5,9 @@ var os = require('os');
 exports.ACCESS_KEY = '<PLEASE APPLY YOUR ACCESS KEY>';
 exports.SECRET_KEY = '<DONT SEND YOUR SECRET KEY TO ANYONE>';
 
-var pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../', 'package.json')));
+// var pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../', 'package.json')));
 var ua = function() {
-    return 'QiniuNodejs/' + pkg.version + ' (' + os.type() + '; ' + os.platform() + '; ' + os.arch() + '; )';
+    return 'QiniuNodejs/6.1.11 (' + os.type() + '; ' + os.platform() + '; ' + os.arch() + '; )';
 }
 
 exports.USER_AGENT = ua();
